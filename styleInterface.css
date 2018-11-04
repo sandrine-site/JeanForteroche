@@ -1,0 +1,124 @@
+/* ---------------------------------------- */
+/* ==            SOMMAIRE                   */
+/*---------------------------------------- */
+
+/* L        - 1 - */
+/* L        - 2 - */
+/* L        - 3 - */
+
+/* ---------------------------------------- */
+/* ==       CODES COLEURS           */
+/*---------------------------------------- */
+/*
+Noir (text) :            #000
+beige (fond) :        wheat
+boutons :    #331902
+
+*/
+
+/* ---------------------------------------- */
+/* == DÉFINITIONS DES POLICES*/
+/*---------------------------------------- */
+body
+{
+	font-family: 'Ubuntu', sans-serif;
+	margin: auto;
+    width: 100%;
+    font-size: 16px;
+    text-align: justify;
+    background-color: #cbc2ba;
+    text-align: center;
+
+}
+#mceu_21{margin: 70px auto;}
+
+/* ---------------------------------------- */
+/* == Interface formulaire*/
+/*---------------------------------------- */
+input[type="submit"],#create > form:nth-child(4) > button:nth-child(1)
+{
+    background-color:#331902;
+    color: #cbc2ba;
+    border: 2px solid #cbc2ba;
+    padding: 15px;
+    border-radius: 10px;
+    display: block;
+    margin: 30px auto;
+}
+input[type="submit"]:hover,#create > form:nth-child(4) > button:nth-child(1):hover
+{
+    background-color:#cbc2ba;
+    color: #331902;
+    border: 2px solid #331902;
+    padding: 15px;
+    border-radius: 5px;
+}
+#formulaire
+{
+    display: flex;
+    justify-content: space-around;
+}
+#soustitre
+{
+    margin-top: 40px;
+}
+.choix
+{
+    width: 25%;
+    text-align: center;
+}
+input:not([type="submit"])
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+[type="radio"]:not(:checked),
+[type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+ 
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label {
+  position: relative; 
+  padding-left: 45px; 
+  cursor: pointer; 
+    
+}
+[type="radio"]:not(:checked) + label::before,
+[type="radio"]:checked + label::before {
+  content: '';
+  position: absolute;
+  left:0; top: -6px;
+  width: 30px; height: 30px; 
+  border: 1px solid #331902;
+  background: #cbc2ba;
+  border-radius: 3px; /* angles arrondis */
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
+}
+ 
+/* Aspect général de la coche */
+[type="radio"]:not(:checked) + label::after,
+[type="radio"]:checked + label::after {
+  content: '✔';
+  position: absolute;
+  top: -9px; left: 4px;
+  font-size: 25px;
+  color: #331902;
+  transition: all .2s; 
+}
+/* Aspect si "pas cochée" */
+[type="radio"]:not(:checked) + label::after {
+  opacity: 0; /* coche invisible */
+  transform: scale(0); /* mise à l'échelle à 0 */
+}
+/* Aspect si "cochée" */
+[type="radio"]:checked + label::after {
+  opacity: 1; /* coche opaque */
+  transform: scale(1); /* mise à l'échelle 1:1 */
+}
+
+

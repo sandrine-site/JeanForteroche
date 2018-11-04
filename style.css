@@ -1,0 +1,256 @@
+/* ---------------------------------------- */
+/* ==            SOMMAIRE                   */
+/*---------------------------------------- */
+
+/* L        - 1 - */
+/* L        - 2 - */
+/* L        - 3 - */
+
+/* ---------------------------------------- */
+/* ==       CODES COLEURS           */
+/*---------------------------------------- */
+/*
+Noir (text) :            #000
+beige (fond) :        wheat
+boutons :    #331902
+
+*/
+
+/* ---------------------------------------- */
+/* == DÉFINITIONS DES POLICES*/
+/*---------------------------------------- */
+body
+{
+	font-family: 'Ubuntu', sans-serif;
+	margin: auto;
+    width: 100%;
+    font-size: 16px;
+    text-align: justify;
+    background-color: #cbc2ba;
+
+}
+h1
+{
+    font-family: 'Caveat', cursive;
+	text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1em;
+    text-align: center;
+    
+}
+#corps
+{
+    padding: 60px;
+    margin-top: -300px;
+    z-index: 0;
+    background-color: transparent;
+}
+
+/* ---------------------------------------- */
+/* == header         */
+/*---------------------------------------- */
+header
+{
+    height: 800px;
+    margin: auto;
+    background-image: url(../images/header.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+/*-----annimation oiseaux--------*/
+#oiseaux1
+{
+    position: fixed;
+    right: 30%;
+    top:-10%;
+    width: 30px;
+    height: auto;
+    animation: oiseau1 15s linear;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes oiseau1
+{
+    0% {right:-10%; top:50%;}
+    100{right:30%;top: -10%;}
+}
+#oiseaux2
+{
+    position: fixed;
+    right:30%;
+    top:-10%;
+    width: 30px;
+    height: auto;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    animation: oiseau2 15s linear;
+}
+
+@keyframes oiseau2
+{
+    0% {right:-10%; top:30%}
+	100%{right:30%; top:-10%}
+}
+#oiseaux3
+{
+    position: fixed;
+    right: 110%;
+    top:-10%;
+    width: 40px;
+    height: auto;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    animation: oiseau3 15s linear;
+}
+
+@keyframes oiseau3
+{
+    0% {right:50%; top:50%}
+	100%{right:110%; top:-10%}
+}
+#oiseaux4
+{
+    position: fixed;
+    right: 50%;
+    top:-10%;
+    width: 30px;
+    height: auto;
+     animation-delay: 0.5s;
+    animation-fill-mode: both;
+    animation: oiseau4 15s linear;
+}
+
+@keyframes oiseau4
+{
+    0% {right:-10%; top:100%}
+	100%{right:50%; top:-10}
+}
+
+/* ---------------------------------------- */
+/* == menu         */
+/*---------------------------------------- */
+
+.dropbtn
+{
+    position: fixed;
+    top:30px;
+    left:30px;
+    width: 56px;
+    height: 50px;
+    background-image: url(../images/menu.png);
+    background-repeat: no-repeat;
+    z-index: 5;
+    background-color: transparent;
+    border: none;
+}
+.dropbtn:hover
+{
+    background-image: url(../images/menuhover.png);
+}
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-menu
+{
+    display: none;
+    position: fixed;
+    min-width: 200px;
+    box-shadow: 0px,8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 75px;
+    left: 30px;
+}
+.dropdown-menu a
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+
+}
+.dropdown:hover .dropdown-menu{display: block;}
+.dropdown-menu a:hover{background-color: rgba(203,194,186,0.5)}
+
+
+/* ---------------------------------------- */
+/* == SECTION A propos de l'auteur         */
+/*---------------------------------------- */
+
+#APropos
+{
+    background-color:white;
+    padding: 30px;
+    box-shadow:  0px 10px 30px 0 rgba(49, 52, 57, 0.3), 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-top: -100px;
+    margin-right: 60px;
+    margin-left: 60px;
+    z-index: 4;
+    border-radius: 10px;
+    
+}
+/*     sous partie      */
+#photo{margin: auto;}
+#photo img
+{
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    align-self: center;
+    display: block;
+}
+
+/*     sous partie      */
+.btn.btn-primary
+{
+    background-color:#331902;
+    color: #cbc2ba;
+    border: 2px solid #cbc2ba;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+.btn.btn-primary:hover
+{
+    background-color:#cbc2ba;
+    color: #331902;
+    border: 2px solid #331902;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+/* ---------------------------------------- */
+/* ==      SECTION Principaux titres        */
+/*---------------------------------------- */
+#PrpxTitres,#Billets,#Avis
+{
+    background-color:white;
+    padding: 30px 15px;
+    box-shadow:  0px 10px 30px 0 rgba(49, 52, 57, 0.3), 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-top: 60px;
+    margin-right: 60px;
+    margin-left: 60px;
+    z-index: 4;
+    border-radius: 10px;
+    
+}
+#PrpxTitres img
+{
+   margin: 20px 10px;
+}
+
+
+.Avis{padding: 20px;}
+/* ---------------------------------------- */
+/* ==            SECTION                */
+/*---------------------------------------- */
+
+/*     sous partie      */
+
+/*     sous partie      */
+
+
+
