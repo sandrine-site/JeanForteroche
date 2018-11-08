@@ -19,19 +19,21 @@
 </head> 
    
 <header>
-    <div class="dropdown"> 
-        <button class="dropbtn"></button>
-        <div class="dropdown-menu">
-            <a href="http://localhost/Projet4/index.php">Accueil</a>
-            <a href="#">à Propos de l'auteur</a>
-            <a href="#">Principaux titres</a>
-            <a href="#">Billet simple pour l'Alaska</a>
-            <a href="#">Avis</a>
+   <div id="fonds">
+        <div class="dropright"> 
+            <button class="dropbtn"></button>
+            <div class="drop-menu">
+                <a href="http://jeanforteroche.slashcreations.fr/">Accueil</a>
+                <a href="#">à Propos de l'auteur</a>
+                <a href="#">Principaux titres</a>
+                <a href="#">Billet simple pour l'Alaska</a>
+                <a href="http://jeanforteroche.slashcreations.fr/comments.php">Avis</a>
+            </div>
         </div>
+        <div id="bird1" ></div>
+        <div id="bird2" ></div>
+        <div id="bird3" ></div>
+        <div id="bird4" ></div>
     </div>
-    <img id="oiseaux1" src="images/oiseau1.png" alt="Photo d'oiseau">
-    <img id="oiseaux2" src="images/oiseau2.png" alt="Photo d'oiseau">
-    <img id="oiseaux3" src="images/oiseau3.png" alt="Photo d'oiseau">
-    <img id="oiseaux4" src="images/oiseau3.png" alt="Photo d'oiseau">
 </header>
     
